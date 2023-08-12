@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search-tec</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #00ff00; /* Hacker green text color */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .search-container {
+            text-align: center;
+            max-width: 90%; /* Adjust the value as needed */
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-family: monospace;
+            white-space: pre;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .search-button {
+            background-color: #333;
+            color: #00ff00;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        <div class="logo">
+            ███████╗███████╗ █████╗ ██████╗  ██████╗██╗  ██╗
+            ██╔════╝██╔════╝██╔══██╗██╔══██╗██╔════╝██║  ██║
+            ███████╗█████╗  ███████║██████╔╝██║     ███████║
+            ╚════██║██╔══╝  ██╔══██║██╔══██╗██║     ██╔══██║
+            ███████║███████╗██║  ██║██║  ██║╚██████╗██║  ██║
+            ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝
+        </div>
+{% extends "simple/base.html" %}
+{% block content %}
+<div class="index">
+    <div class="title"><h1>SEARCHTEC</h1></div>
+    {% include 'simple/simple_search.html' %}
+</div>
+{% endblock %}
+    </div>
+</body>
+</html>
